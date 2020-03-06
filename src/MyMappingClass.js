@@ -1,4 +1,5 @@
 import * as atlas from 'azure-maps-control';
+//const atlas = require('azure-maps-control');
 
 export class MyMappingClass {
     constructor() {
@@ -35,3 +36,4 @@ export class MyMappingClass {
 
     }
 }
+

@@ -1,3 +1,6 @@
+//import * as atlas from 'azure-maps-control';
+//const atlas = require('azure-maps-control');
+
 var expect = chai.expect;
 var should  = chai.should;
 
@@ -14,6 +17,7 @@ describe("Azure Maps Unit Tests", function() {
         }
       });
 
+      //assert.ifError(map);
       expect(map).not.to.be.null;
     }); 
 
@@ -30,6 +34,9 @@ describe("Azure Maps Unit Tests", function() {
 
       var hull = atlas.math.getConvexHull(shapes);
       shapes.push(hull);
+      
+      //assert.notEqual(shape.length, 16);
+
       expect(shapes.length).equal(16);
 
     });   
@@ -47,6 +54,7 @@ describe("Azure Maps Unit Tests", function() {
  
        var hull = atlas.math.getConvexHull(shapes);
        shapes.push(hull);
+       //assert.notEqual(shape.length, 8);
        expect(shapes.length).equal(8);
      });   
      
